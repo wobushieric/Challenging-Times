@@ -1,2 +1,5 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h1>Book</h1>
+
+<%= render partial: 'book', 
+           object: @book, 
+           locals: {single_book: true} %>

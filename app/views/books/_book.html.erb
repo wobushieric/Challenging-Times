@@ -1,0 +1,10 @@
+<div class="book">
+	<p>
+		<strong>Book: </strong> 
+		<% if single_book %>
+			<%= book.name %> <strong>Author: </strong> <%= book.author %>
+		<% else %>
+			<%= link_to book.name, book_path(book) %>
+		<% end %>
+	</p>
+</div>
